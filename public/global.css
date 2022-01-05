@@ -1,0 +1,146 @@
+:root {
+	--surface: #fbfcfe;
+	--surface-1: #eef5f8;
+	--neutral: #5c5f61;
+	--outline: #71787d;
+	--on-surface: #001e2c;
+
+	--primary-container: #bfe8ff;
+	--on-primary-container: #001e2c;
+
+	--error-container: #ffdad4;
+	--on-error-container: #410001;
+
+	--red: #dd3730;
+	--yellow: #ff9229;
+	--green: #25d366;
+
+	--corner-round: 5px;
+	--corner-pill: 200px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	font-family: 'Varela Round', sans-serif;
+	vertical-align: baseline;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--surface);
+
+	animation: all 1s ease-in-out;
+
+	/* Disable Select */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+h1 {
+	color: var(--neutral);
+	font-size: 1.25rem;
+	margin-block: 20px;
+}
+
+/* Pill & Buttons */
+
+.pill {
+	display: grid;
+	place-items: center;
+	background-color: var(--surface-1);
+	color: var(--on-surface);
+	width: 100%;
+	font-size: 1.25rem;
+	border-radius: var(--corner-pill);
+	padding-block: 10px;
+	margin-block: 40px;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	font-size: 1rem;
+	border-radius: var(--corner-round);
+
+	cursor: pointer;
+
+	transition: 50ms ease-in-out;
+}
+
+.btn:hover {
+	transform: scale(1.05);
+}
+
+.btn > span {
+	margin-right: 10px;
+	font-size: 1.2rem;
+}
+
+.btn-fab {
+	position: absolute;
+	right: 20px;
+	bottom:20px;
+}
+
+.btn-error {
+	background-color: var(--error-container);
+	color: var(--on-error-container);
+	border: 2px solid var(--on-error-container);
+	margin-inline: auto;
+}
+
+.btn-primary {
+	background-color: var(--primary-container);
+	color: var(--on-primary-container);
+	border: 2px solid var(--on-primary-container);
+	margin-inline: auto;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+
+/* Colors */
+
+.neutral {
+	color: var(--neutral);
+}
+.red {
+	color: var(--red);
+}
+.yellow {
+	color: var(--yellow);
+}
+
+/* Grid > Container */
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+@media (min-width: 400px) {
+	.container {
+		width: 85%;
+		padding: 0;
+	}
+}
+
+@media (min-width: 550px) {
+	.container {
+		width: 80%;
+	}
+}
