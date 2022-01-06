@@ -144,3 +144,9 @@ h1 {
 		width: 80%;
 	}
 }
+
+@media (max-width:550px) {
+	.pill {
+		font-size: 1rem;
+	}
+}

@@ -1,21 +1,31 @@
-<footer>Designed & Developed by <a target="_blank" href="https://www.linkedin.com/in/agarwalparth/">Parth Agarwal</a></footer>
+<footer>
+	Designed & Developed by <a target="_blank" href="https://www.linkedin.com/in/agarwalparth/">Parth Agarwal</a>
+</footer>
 
 <style>
-    footer {
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        
-        text-align: center;
+	footer {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
 
-        padding-block: 10px;
+		text-align: center;
 
-        color: var(--neutral)
-    }
+		padding-block: 10px;
 
-    a, a:visited, a:active {
-        color: var(--on-primary-container);
-        font-weight: bold;
-        text-decoration: underline;
-    }
+		color: var(--neutral);
+	}
+
+	a,
+	a:visited,
+	a:active {
+		color: var(--on-primary-container);
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	@media screen and (max-width: 767px) {
+		footer {
+			display: none;
+		}
+	}
 </style>
